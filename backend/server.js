@@ -16,14 +16,23 @@ connectDB(); // ✅ Connect to MongoDB
 
 // ✅ Middleware.
 // ----------------------------------------------------------------------------------------------------------------------------
-    app.use(cors());
+    app.use(cors(
+        {
+            origin:
+            [
+                "http://localhost:3000",
+                "https://health-verifier.netlify.app"
+            ],
+            credentials: true
+        }
+    ));
     app.use(express.json());
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // ✅ Routes.
 // ----------------------------------------------------------------------------------------------------------------------------
-    app.use("/api/influencers", influencerRoutes);
-    app.use("/api/claims", claimRoutes);
+    app.use("/routes/influencerRoutes", influencerRoutes);
+    app.use("/routes/claimRoutes", claimRoutes);
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // ✅ Root Endpoint.
