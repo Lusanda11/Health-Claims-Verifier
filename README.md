@@ -33,7 +33,7 @@ This project follows a **cyberpunk green neon glow** theme for a futuristic UI. 
 
 ## 📂 Project Structure
 ```plaintext
-Admin-Panel/
+Health-Claims-Verifier/
 │── backend/
 │   ├── controllers/
 │   │   ├── influencerController.js
@@ -94,8 +94,8 @@ Admin-Panel/
 ### 🔧 Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Lusanda11/Admin-Panel.git
-cd Admin-Panel
+git clone https://github.com/Lusanda11/Health-Claims-Verifier.git
+cd Health-Claims-Verifier
 ```
 
 ### 🔥 Step 2: Install Dependencies
