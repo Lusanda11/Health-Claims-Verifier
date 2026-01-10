@@ -31,8 +31,8 @@ connectDB(); // ✅ Connect to MongoDB
 
 // ✅ Routes.
 // ----------------------------------------------------------------------------------------------------------------------------
-    app.use("/routes/influencerRoutes", influencerRoutes);
-    app.use("/routes/claimRoutes", claimRoutes);
+    app.use("/api/influencers", influencerRoutes);
+    app.use("/api/claims", claimRoutes);
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // ✅ Root Endpoint.

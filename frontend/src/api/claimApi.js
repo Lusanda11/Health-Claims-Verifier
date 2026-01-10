@@ -9,7 +9,7 @@
         try
         {
             // API Request using fetch.
-            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/claims/verify`, // Uses process.env.REACT_APP_BACKEND_URL for dynamic backend URL configuration.
+            const res = await fetch(`${process.env.REACT_APP_API_URL}/api/claims/verify`, // Uses process.env.REACT_APP_BACKEND_URL for dynamic backend URL configuration.
             {
                 method: "POST",  // Uses POST to send claim data to /api/claims/verify.
                 headers: { "Content-Type": "application/json" }, // Uses JSON.stringify({ content: claim }) to convert the claim into JSON format.
